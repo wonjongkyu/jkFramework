@@ -30,9 +30,18 @@ configurations {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
-
+	
 	compile('org.apache.tomcat.embed:tomcat-embed-jasper')
 	compile("javax.servlet:jstl")
+	
+	// jdbc
+	compile('org.springframework.boot:spring-boot-starter-jdbc')
+	compile('mysql:mysql-connector-java')
+	
+	// mybatis
+	compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:1.1.1")
+	compile('org.mybatis:mybatis-spring')
+	compile('org.mybatis:mybatis')
 
 	
 	testCompile('org.springframework.boot:spring-boot-starter-test') 
