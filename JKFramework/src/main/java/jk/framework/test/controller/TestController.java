@@ -19,6 +19,7 @@ public class TestController {
 	@Autowired
 	TestService testService;
 	
+	/* Test Code */
 	@RequestMapping("/")
 	@ResponseBody
 	public String home() {
@@ -37,6 +38,12 @@ public class TestController {
 		ModelAndView nextPage = new ModelAndView("test/readTest");
 		nextPage.addObject("testList", testList);
 		return nextPage;
+	}
+	/* Test Code */
+	
+	@GetMapping("/list")
+	public String list(Model model) {
+		List<TestEntity> list = testService.findAll();
 	}
  
 }
