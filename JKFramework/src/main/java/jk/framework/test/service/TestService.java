@@ -40,19 +40,19 @@ public class TestService {
 	 * @param bno
 	 * @return
 	 */ 	
-	public List<TestEntity> findAll(int bno){
-		return mapper.findByBno2(bno);
+	public List<TestEntity> findAll(){
+		return mapper.findAll();
 	}
 	
-	public List<TestEntity> save(int bno){
-		return mapper.findByBno2(bno);
+	public void save(TestEntity entity){
+		mapper.save(entity);
 	}
 	
-	public List<TestEntity> findOne(int bno){
-		return mapper.findByBno2(bno);
+	public TestEntity findOne(TestEntity entity){
+		return mapper.findOne(entity);
 	}
 	
-	public List<TestEntity> delete(int bno){
-		return mapper.findByBno2(bno);
+	public void delete(TestEntity entity){
+		mapper.delete(entity);
 	}
 }

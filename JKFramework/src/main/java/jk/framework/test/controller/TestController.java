@@ -42,8 +42,10 @@ public class TestController {
 	/* Test Code */
 	
 	@GetMapping("/list")
-	public String list(Model model) {
+	@ResponseBody
+	public List<TestEntity> list() {
 		List<TestEntity> list = testService.findAll();
+		return list;
 	}
  
 }
