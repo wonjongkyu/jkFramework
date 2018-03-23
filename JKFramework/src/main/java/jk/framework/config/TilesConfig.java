@@ -5,7 +5,7 @@
  * This software is the confidential and proprietary information
  * of yysvip.tistory.com.,LTD. ("Confidential Information").
  */
-package jk.framework.framework;
+package jk.framework.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
