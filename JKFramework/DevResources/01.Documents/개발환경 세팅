@@ -1,4 +1,5 @@
 
+#########################################################################################
 [Tiles 적용]
 	- build.gradle 추가
 		compile("org.apache.tiles:tiles-servlet:3.0.5")
@@ -6,3 +7,25 @@
 		
 	- TilesConfig.java 파일 추가
 	- WEB-INF/tiles/ 추가
+
+#########################################################################################
+[Resource 적용]
+http://heowc.tistory.com/32
+- 서버를 내장할 수 있는 스프링부트에서는 프로퍼티에서 간단하게 설정을 해줄 수 있습니다.
+ 
+server.compression.enabled=true
+spring.resources.chain.cache=true
+server.compression.min-response-size=2048
+spring.resources.chain.enabled=true
+spring.resources.cache-period=3600
+
+spring.resources.static-locations 를 보면  
+"classpath:/META-INF/resources/",
+"classpath:/resources/",
+"classpath:/static/",
+"classpath:/public/"
+
+이 경로들이 Default 라고 되어 있는데 경로를 못잡아줍니다..ㅠ 
+예제를 만들 때 jsp페이지를 구성하기 위해 tomcat-embed-jasper를 가져와서 그런 것 같기도.. 
+하고 아시는 분은 알려주시면 감사하겠습니다.
+#########################################################################################
