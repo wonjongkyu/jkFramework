@@ -21,6 +21,9 @@ public class TestController {
     @Value("${server.ip}")
     private String serverIp ;
     
+    @Value("${mybatis.mapper-locations}")
+    private String location;
+    
 	@Autowired
 	TestService testService;
 	
@@ -31,16 +34,22 @@ public class TestController {
 		return "home.test";
 	}
 	
-	@RequestMapping("/test")
+	@RequestMapping("/propTest")
 	public String test(Model model) {
-		model.addAttribute("test", serverIp);
-		return "test";
+		model.addAttribute("test", location);
+		return "propTest";
 	}
 	
-	@GetMapping("/select")
+	@RequestMapping("/dashboard")
+	public String dashboard(Model model) {
+		model.addAttribute("test", serverIp);
+		return "/dashboard/dashboard";
+	}
+	
+	@GetMapping("/test/readTest")
 	public ModelAndView readTest() {
 		List<TestEntity> testList = testService.findByBno(1);
-		ModelAndView nextPage = new ModelAndView("test/readTest");
+		ModelAndView nextPage = new ModelAndView("/test/readTest");
 		nextPage.addObject("testList", testList);
 		return nextPage;
 	}

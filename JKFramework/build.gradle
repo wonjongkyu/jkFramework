@@ -43,8 +43,12 @@ dependencies {
 	compile('org.mybatis:mybatis-spring')
 	compile('org.mybatis:mybatis')
 	
+  	// tiles 3
+	compile("org.apache.tiles:tiles-servlet:3.0.5")
+	compile("org.apache.tiles:tiles-jsp:3.0.5")
+	
 	// lombok
   	compileOnly("org.projectlombok:lombok:1.16.6")
-	
+
 	testCompile('org.springframework.boot:spring-boot-starter-test') 
 }

@@ -9,7 +9,7 @@ import org.springframework.context.annotation.PropertySource;
 @SpringBootApplication
 @Configuration
 @EnableAutoConfiguration
-@PropertySource("test.properties")
+@PropertySource("config.properties")
 public class JkFrameworkApplication {
 
 	public static void main(String[] args) {

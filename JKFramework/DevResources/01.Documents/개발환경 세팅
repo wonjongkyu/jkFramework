@@ -1,0 +1,8 @@
+
+[Tiles 적용]
+	- build.gradle 추가
+		compile("org.apache.tiles:tiles-servlet:3.0.5")
+		compile("org.apache.tiles:tiles-jsp:3.0.5")
+		
+	- TilesConfig.java 파일 추가
+	- WEB-INF/tiles/ 추가
