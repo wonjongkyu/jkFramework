@@ -1,3 +1,20 @@
+#########################################################################################
+Step 1. STS 다운로드 및 압축해제
+#########################################################################################
+Step 2. gradle plugin 설치
+- STS 실행 후 Dashboard에서 [Manage]-[Gradle (STS Legacy) Support] 설치
+#########################################################################################
+Step 3. Lombok 설치하기
+- http://projectlombok.org/download.html
+콘솔창에서 ‘java –jar lombok.jar’ 실행(윈도우에서는 더블클릭 가능)
+Lombok.jar 직접 다운로드 설치시
+다운로드 폴더 이동 후 실행
+Maven Dependency 추가 설치시
+Maven Repository 폴더 이동 후 실행
+기본위치 : ‘~/.m2/repository/org/projectlombok/lombok/{해당버젼}/’
+IDE 설치 위치[Specify location…]를 검색해서 ‘eclipse.exe’ 파일 선택
+LOMBOK_INSTALL_01
+eclipse.ini or sts.ini 파일이 변경
 
 #########################################################################################
 [Tiles 적용]
