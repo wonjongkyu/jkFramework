@@ -16,6 +16,11 @@ IDE 설치 위치[Specify location…]를 검색해서 ‘eclipse.exe’ 파일 
 LOMBOK_INSTALL_01
 eclipse.ini or sts.ini 파일이 변경
 
+
+#########################################################################################
+[mybatis carmelcase 적용]
+mybatis.configuration.map-underscore-to-camel-case=true
+참고 사이트 : https://chois9105.github.io/spring/2017/12/31/configuring-mybatis-underscore-to-camel-case.html
 #########################################################################################
 [Tiles 적용]
 	- build.gradle 추가
