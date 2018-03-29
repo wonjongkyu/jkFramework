@@ -49,6 +49,9 @@ dependencies {
 	
 	// lombok
   	compileOnly("org.projectlombok:lombok:1.16.6")
+  	
+  	// common-lang
+	compile("org.apache.commons:commons-lang3:3.0")
 
 	testCompile('org.springframework.boot:spring-boot-starter-test') 
 }
